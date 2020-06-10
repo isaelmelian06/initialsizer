@@ -2,6 +2,34 @@
  * Your code here!
  ******************************************************************************/
 
+// a variable  that takes in the users input and converts them into out parameters for our function
+
+
+// this variable takes the users first name which is the getInput function and index 0
+const fnInput  = getInput(0);
+
+// this variable takes the users last name which is the getInput function and index 1
+const lnInput = getInput(1);
+
+
+/* we need a function that takes in two strings examples : "isael" "melian" and returns
+the initials of those to string. "isael""melian" --> IM.*/
+
+function getInitials(fnInput,lnInput){
+  const nameInitials = fnInput[0] + "." + lnInput[0] + ".";
+  return nameInitials;
+}
+/* this function takes in the two string first and last name and return the string length*/
+// You should be able to pass in two strings add them together and then return the length of that new string.
+function nameLength(fnInput,lnInput){
+  const sizeOfName = fnInput.length  + lnInput.length;
+  return "Hey, " + getInitials(fnInput,lnInput) + " Mind if I call you that? Your full name is " + sizeOfName + " letters long!";
+}
+
+
+// print out our program
+console.log(nameLength(fnInput,lnInput));
+
 
 
 /*******************************************************************************
